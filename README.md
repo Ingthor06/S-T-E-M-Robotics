@@ -4,18 +4,22 @@
   </a>
 </div>
 
+<p align="center">
   <img src="https://img.shields.io/badge/Taekniskolinn-blue?style=for-the-badge&logo=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqTwAaMeKxCyPqZWQFVSrB3ifYAiyyDOn1HQ&s&logoColor=white" alt="Taekniskolinn">
+</p>
 
-
+<p align="center">
   <img src="https://img.shields.io/github/stars/tilkynntu-is/tilkynntu-project?style=social" alt="GitHub stars">
   <img src="https://img.shields.io/github/forks/tilkynntu-is/tilkynntu-project?style=social" alt="GitHub forks">
   <img src="https://img.shields.io/badge/viewers-0-%23000000?style=flat-square&logo=GitHub&logoColor=white" alt="Viewers">
   <img src="https://img.shields.io/github/contributors/tilkynntu-is/tilkynntu-project" alt="GitHub contributors">
   <img src="https://img.shields.io/github/license/tilkynntu-is/tilkynntu-project" alt="License">
+</p>
 
-
-
+<p align="center">
   <img src="https://img.shields.io/badge/Python-3.9-blue?logo=python&logoColor=white" alt="Python">
+</p>
+
 
 
 A class project exploring STEM (Science, Technology, Engineering, and Mathematics) through robotics design. This repository features innovative ideas, problem-solving, and teamwork in creating functional robots. It combines coding, engineering, and creativity to showcase real-world applications of robotics in STEM fields.
