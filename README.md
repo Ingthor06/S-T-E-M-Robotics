@@ -24,6 +24,6 @@ Bekkjaverkefni sem kannar **STEM** *(Vísindi, Tækni, Verkfræði og Stærðfr�
 A class project exploring **STEM** *(Science, Technology, Engineering, and Mathematics)* through robotics design. This repository features innovative ideas, problem-solving, and teamwork in creating functional robots. It combines coding, engineering, and creativity to showcase real-world applications of robotics in STEM fields.
 
 > [!NOTE]
-> This project is developed and designed by students in Tækniskólinn Iceland. This website is for educational purposes only.
+> This project is developed and designed by a student in Tækniskólinn Iceland. This project is for educational purposes only.
 
 # Project 1
