@@ -26,4 +26,4 @@ A class project exploring **STEM** *(Science, Technology, Engineering, and Mathe
 > [!NOTE]
 > This project is developed and designed by a student in Tækniskólinn Iceland. This project is for educational purposes only.
 
-# Project 1
+# Project 1:
