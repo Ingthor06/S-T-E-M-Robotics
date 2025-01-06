@@ -1,8 +1,9 @@
 <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=50&duration=2000&pause=1000&center=true&vCenter=true&width=435&lines=S-T-E-M+%26+Robotics" alt="Typing SVG: STEM & Robotics">
+  <a href="https://git.io/typing-svg" target="_blank">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=40&duration=2000&pause=1000&center=true&vCenter=true&width=435&lines=S-T-E-M+%26+Robotics" alt="Typing SVG: STEM & Robotics">
   </a>
 </div>
+
 
 
 <p align="center">
