@@ -5,22 +5,15 @@
 </div>
 
 
+![Taekniskolinn](https://img.shields.io/badge/Taekniskolinn-blue?style=for-the-badge&logo=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqTwAaMeKxCyPqZWQFVSrB3ifYAiyyDOn1HQ&s&logoColor=white)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Taekniskolinn-blue?style=for-the-badge&logo=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqTwAaMeKxCyPqZWQFVSrB3ifYAiyyDOn1HQ&s&logoColor=white" alt="Taekniskolinn">
-</p>
+![GitHub stars](https://img.shields.io/github/stars/tilkynntu-is/tilkynntu-project?style=social)
+![GitHub forks](https://img.shields.io/github/forks/tilkynntu-is/tilkynntu-project?style=social)
+![Viewers](https://img.shields.io/badge/viewers-0-%23000000?style=flat-square&logo=GitHub&logoColor=white)
+![GitHub contributors](https://img.shields.io/github/contributors/tilkynntu-is/tilkynntu-project)
+![License](https://img.shields.io/github/license/tilkynntu-is/tilkynntu-project)
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/tilkynntu-is/tilkynntu-project?style=social" alt="GitHub stars">
-  <img src="https://img.shields.io/github/forks/tilkynntu-is/tilkynntu-project?style=social" alt="GitHub forks">
-  <img src="https://img.shields.io/badge/viewers-0-%23000000?style=flat-square&logo=GitHub&logoColor=white" alt="Viewers">
-  <img src="https://img.shields.io/github/contributors/tilkynntu-is/tilkynntu-project" alt="GitHub contributors">
-  <img src="https://img.shields.io/github/license/tilkynntu-is/tilkynntu-project" alt="License">
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.9-blue?logo=python&logoColor=white" alt="Python">
-</p>
+![Python](https://img.shields.io/badge/Python-3.9-blue?logo=python&logoColor=white)
 
 ## Íslenska:
 Bekkjaverkefni sem kannar STEM (Vísindi, Tækni, Verkfræði og Stærðfræði) í gegnum hönnun á vélmennum. Þetta geymsla inniheldur nýstárlegar hugmyndir, lausnaleit og samvinnu við smíði hagnýtra vélmenna. Verkefnið sameinar forritun, verkfræði og sköpun til að sýna raunhæf notkunarsvið vélmenna í STEM greinum.
