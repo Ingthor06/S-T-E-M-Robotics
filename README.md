@@ -1,8 +1,9 @@
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=40&duration=2000&pause=1000&center=true&vCenter=true&width=435&lines=S-T-E-M+%26+Robotics" alt="Typing SVG">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=50&duration=2000&pause=1000&center=true&vCenter=true&width=435&lines=S-T-E-M+%26+Robotics" alt="Typing SVG: STEM & Robotics">
   </a>
 </div>
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/Taekniskolinn-blue?style=for-the-badge&logo=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqTwAaMeKxCyPqZWQFVSrB3ifYAiyyDOn1HQ&s&logoColor=white" alt="Taekniskolinn">
