@@ -17,10 +17,10 @@
 
 
 # Description
-## Íslenska:
+### Íslenska:
 Bekkjaverkefni sem kannar STEM (Vísindi, Tækni, Verkfræði og Stærðfræði) í gegnum hönnun á vélmennum. Þetta geymsla inniheldur nýstárlegar hugmyndir, lausnaleit og samvinnu við smíði hagnýtra vélmenna. Verkefnið sameinar forritun, verkfræði og sköpun til að sýna raunhæf notkunarsvið vélmenna í STEM greinum.
 
-## English:
+### English:
 A class project exploring STEM (Science, Technology, Engineering, and Mathematics) through robotics design. This repository features innovative ideas, problem-solving, and teamwork in creating functional robots. It combines coding, engineering, and creativity to showcase real-world applications of robotics in STEM fields.
 
 # Project 1
