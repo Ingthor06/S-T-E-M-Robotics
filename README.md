@@ -7,11 +7,12 @@
 
 ![Taekniskolinn](https://img.shields.io/badge/Taekniskolinn-blue?style=for-the-badge&logo=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqTwAaMeKxCyPqZWQFVSrB3ifYAiyyDOn1HQ&s&logoColor=white)
 
-![GitHub stars](https://img.shields.io/github/stars/tilkynntu-is/tilkynntu-project?style=social)
-![GitHub forks](https://img.shields.io/github/forks/tilkynntu-is/tilkynntu-project?style=social)
+![GitHub stars](https://img.shields.io/github/stars/Ingthor06/S-T-E-M-Robotics?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Ingthor06/S-T-E-M-Robotics?style=social)
 ![Viewers](https://img.shields.io/badge/viewers-0-%23000000?style=flat-square&logo=GitHub&logoColor=white)
-![GitHub contributors](https://img.shields.io/github/contributors/tilkynntu-is/tilkynntu-project)
-![License](https://img.shields.io/github/license/tilkynntu-is/tilkynntu-project)
+![GitHub contributors](https://img.shields.io/github/contributors/Ingthor06/S-T-E-M-Robotics)
+![License](https://img.shields.io/github/license/Ingthor06/S-T-E-M-Robotics)
+
 
 ![Python](https://img.shields.io/badge/Python-3.9-blue?logo=python&logoColor=white)
 
