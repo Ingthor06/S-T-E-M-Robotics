@@ -16,7 +16,7 @@
 ![Python](https://img.shields.io/badge/Python-3.9-blue?logo=python&logoColor=white)
 
 
-# Description
+# Description:
 ### Íslenska:
 Bekkjaverkefni sem kannar **STEM** *(Vísindi, Tækni, Verkfræði og Stærðfræði)* í gegnum hönnun á vélmennum. Þetta geymsla inniheldur nýstárlegar hugmyndir, lausnaleit og samvinnu við smíði hagnýtra vélmenna. Verkefnið sameinar forritun, verkfræði og sköpun til að sýna raunhæf notkunarsvið vélmenna í STEM greinum.
 
