@@ -29,9 +29,10 @@ A class project exploring **STEM** *(Science, Technology, Engineering, and Mathe
 # Project 1:
 
 # Project 2:
-
+N/A
 # Project 3:
-
+N/A
 # Project 4:
-
+N/A
 # Project 5:
+N/A
