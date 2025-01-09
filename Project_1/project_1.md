@@ -3,8 +3,17 @@ In Project 1, we focus on programming the robot to perform a sequence of movemen
 
 ## Part 1:
 ### Main:
+> Suðukóðinn fyrir fyrsta hluta
+
+```
+for (i = 1..5) {
+  move(forward, 500*i, mm)
+  move(backward, 500*i, mm)
+}
+```
+
 > Main code including movement functions and delays
-```py
+```cpp
 #include "vex.h"
 
 using namespace vex;
@@ -30,9 +39,22 @@ View the movement fuctions testing in this short [video](https://www.youtube.com
 
 ## Part 2:
 
+> Suðukóðinn fyrir seinni hluta
+
+```
+list = [1,-1,-1,1,1,-1,1,1,-1,1,1,-1,-1,1]
+# 1 er beyja til haegri og -1 beygja til vinstri
+
+for i in list {
+  move(forward, 50, mm)
+  rotate(90*i)
+}
+move(forward, 50, mm)
+```
+
 ## Robot-Config:
 > Robot configuration maps and initializes hardware components for proper control.
-```py
+```cpp
 #include "vex.h"
 
 using namespace vex;
