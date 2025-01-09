@@ -26,3 +26,7 @@ A class project exploring **STEM** *(Science, Technology, Engineering, and Mathe
 
 > [!NOTE]
 > This project is developed and designed by students in Tækniskólinn Iceland. I am working with both hardware and software in this project, combining physical components with programming to achieve the desired functionality. This project is for educational purposes only.
+
+
+## Project 1
+In [Project 1](Project_1/project_1.md), we focus on programming the robot to perform a sequence of movements, starting with simple tasks and gradually increasing complexity. The robot will move forward and backward in set increments, using loops and logic to automate the process. We will document the process with flowcharts, write clean and efficient code, and demonstrate the robot's functionality through videos.
