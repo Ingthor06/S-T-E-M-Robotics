@@ -14,7 +14,7 @@
 ![License](https://img.shields.io/github/license/Ingthor06/S-T-E-M-Robotics)
 
 
-![Python](https://img.shields.io/badge/Python-3.9-blue?logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-11-blue?logo=c%2B%2B&logoColor=white)
 
 
 # Description:
