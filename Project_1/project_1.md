@@ -2,6 +2,7 @@
 
 ## Codes:
 ### Main:
+> Main code including movement functions and delays
 ```py
 #include "vex.h"
 
@@ -26,6 +27,7 @@ int main() {
 ```
 
 ### Robot-Config:
+> Robot configuration maps and initializes hardware components for proper control.
 ```py
 #include "vex.h"
 
