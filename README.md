@@ -29,8 +29,8 @@ A class project exploring **STEM** *(Science, Technology, Engineering, and Mathe
 
 ## Contributors
 + Developed by: @vValdimar, @Ingthor06
-🔨 HARDWARE: *VEX V5* Robotics hardware is a system of motors, sensors, and components for building and competitive settings.
-🧑‍💻 SOFTWARE: *VEX V5* software enables robot control through VEXcode V5 using graphical or text-based programming.
+  * 🔨 HARDWARE: *VEX V5* Robotics hardware is a system of motors, sensors, and components for building and competitive settings.
+  * 🧑‍💻 SOFTWARE: *VEX V5* software enables robot control through VEXcode V5 using graphical or text-based programming.
 
 ## Project 1
 ### Overview:
