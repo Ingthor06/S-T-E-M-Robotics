@@ -27,7 +27,7 @@ A class project exploring **STEM** *(Science, Technology, Engineering, and Mathe
 > [!NOTE]
 > This project is developed and designed by students in Tækniskólinn Iceland. I am working with both hardware and software in this project, combining physical components with programming to achieve the desired functionality. This project is for educational purposes only.
 
-## Contributors
+## Contributors:
 + **Developed by:** @vValdimar, @Ingthor06<br/>
 
   * 🔨 HARDWARE: *VEX V5* Robotics hardware is a system of motors, sensors, and components for building and competitive settings.
