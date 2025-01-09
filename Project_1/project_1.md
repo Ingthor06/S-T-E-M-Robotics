@@ -11,7 +11,7 @@ for (i = 1..5) {
 }
 ```
 ## Main:
-> Main code including movement functions and delays
+> Main code **for part 1** including movement functions and delays
 ```cpp
 #include "vex.h"
 
@@ -52,6 +52,7 @@ move(forward, 50, mm)
 ```
 
 ## Main:
+> Main code **for part 2** including movement functions and delays
 ```py
 #include "vex.h"
 
