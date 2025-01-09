@@ -34,7 +34,7 @@ int main() {
   }  
 }
 ```
-View the movement fuctions testing in this short [VIDEO](https://www.youtube.com/watch?v=wdl-D-8D_Zs).
+View the movement fuctions testing in this short [video](https://www.youtube.com/watch?v=wdl-D-8D_Zs).
 
 ## Part 2:
 
@@ -74,7 +74,7 @@ int main() {
   Drivetrain.driveFor(forward, 500, mm);
 }
 ```
-Check out the movement fuctions testing in this short [VIDEO](https://youtu.be/0hxD540YdD4).
+Check out the movement fuctions testing in this short [video](https://youtu.be/0hxD540YdD4).
 
 ## Robot-Config:
 > Robot configuration maps and initializes hardware components for proper control.
