@@ -34,6 +34,7 @@ int main() {
   }  
 }
 ```
+#### Video:
 View the movement fuctions testing in this short [video](https://www.youtube.com/watch?v=wdl-D-8D_Zs).
 
 ## Part 2:
@@ -74,6 +75,7 @@ int main() {
   Drivetrain.driveFor(forward, 500, mm);
 }
 ```
+#### Video
 Check out the movement fuctions testing in this short [video](https://youtu.be/0hxD540YdD4).
 
 ## Robot-Config:
