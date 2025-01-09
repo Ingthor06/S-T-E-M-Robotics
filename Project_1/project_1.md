@@ -1,6 +1,6 @@
 # Project 1
 
-## Codes:
+## Part 1:
 ### Main:
 > Main code including movement functions and delays
 ```py
