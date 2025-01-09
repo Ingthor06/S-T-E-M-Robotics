@@ -11,7 +11,7 @@ for (i = 1..5) {
 }
 ```
 ## Main:
-> Main code **for part 1** including movement functions and delays
+> Main code for **Part 1** including movement functions and delays
 ```cpp
 #include "vex.h"
 
@@ -34,7 +34,7 @@ int main() {
   }  
 }
 ```
-View the movement fuctions testing in this short [video](https://www.youtube.com/watch?v=wdl-D-8D_Zs).
+View the movement fuctions testing in this short [video] for part 1(https://www.youtube.com/watch?v=wdl-D-8D_Zs).
 
 ## Part 2:
 
@@ -52,7 +52,7 @@ move(forward, 50, mm)
 ```
 
 ## Main:
-> Main code **for part 2** including movement functions and delays
+> Main code for **Part 2** including movement functions and delays
 ```py
 #include "vex.h"
 
@@ -74,6 +74,7 @@ int main() {
   Drivetrain.driveFor(forward, 500, mm);
 }
 ```
+Check out the movement fuctions testing in this short [video] for part 2(https://youtu.be/0hxD540YdD4).
 
 ## Robot-Config:
 > Robot configuration maps and initializes hardware components for proper control.
