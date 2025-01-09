@@ -2,7 +2,6 @@
 In Project 1, we focus on programming the robot to perform a sequence of movements, starting with simple tasks and gradually increasing complexity. The robot will move forward and backward in set increments, using loops and logic to automate the process. We will document the process with flowcharts, write clean and efficient code, and demonstrate the robot's functionality through videos.
 
 ## Part 1:
-### Main:
 > Suðukóðinn fyrir fyrsta hluta
 
 ```
@@ -11,7 +10,7 @@ for (i = 1..5) {
   move(backward, 500*i, mm)
 }
 ```
-
+## Main:
 > Main code including movement functions and delays
 ```cpp
 #include "vex.h"
@@ -50,6 +49,29 @@ for i in list {
   rotate(90*i)
 }
 move(forward, 50, mm)
+```
+
+## Main:
+```py
+#include "vex.h"
+
+using namespace vex;
+
+int main() {
+  // Initializing Robot Configuration. DO NOT REMOVE!
+  vexcodeInit();
+  // turns the robot left 90 degrees
+  int rightOrLeft[] = {1,-1,-1,1,1,-1,1,1,-1,1,1,-1,-1,1};
+
+  for(int i = 0; i < 14; i++){
+    int direction = rightOrLeft[i];
+    Drivetrain.driveFor(forward, 500, mm);
+    wait(0.5, seconds);
+    Drivetrain.turnFor(right, 90*direction, degrees);
+    wait(0.5, seconds);
+  }
+  Drivetrain.driveFor(forward, 500, mm);
+}
 ```
 
 ## Robot-Config:
