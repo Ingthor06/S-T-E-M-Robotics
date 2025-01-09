@@ -25,8 +25,9 @@ int main() {
   }  
 }
 ```
+View the movement fuctions testing in this short [video](https://www.youtube.com/watch?v=wdl-D-8D_Zs).
 
-### Robot-Config:
+## Robot-Config:
 > Robot configuration maps and initializes hardware components for proper control.
 ```py
 #include "vex.h"
