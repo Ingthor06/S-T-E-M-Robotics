@@ -29,5 +29,13 @@ A class project exploring **STEM** *(Science, Technology, Engineering, and Mathe
 
 
 ## Project 1
-### Overview
-In [Project 1](Project_1/project_1.md), we focus on programming the robot to perform a sequence of movements, starting with simple tasks and gradually increasing complexity. The robot will move forward and backward in set increments, using loops and logic to automate the process. We will document the process with flowcharts, write clean and efficient code, and demonstrate the robot's functionality through videos.
+### Overview:
+In [Project 1](Project_1/project_1.md), we focused on programming a VEX Robotics robot to execute a series of movements and solve a specific path-following challenge. The following tasks were completed:
+
++ Forward and Reverse Movements: Programmed the robot to drive forward and backward for precise distances.
++ Accuracy in Positioning: Ensured that the robot remained within a 20 cm tolerance from its starting point after completing each sequence of movements.
++ Gyro Integration: Added a gyro sensor to the robot's hardware configuration, enabling accurate turns and enhanced control.
++ Fixed Turning Directions: Corrected the turning behavior by adjusting motor configurations, ensuring the robot turns as expected.
++ Path Following: Coded the robot to autonomously follow a difficult, predefined path with accuracy using the drivetrain and sensors.
+  
+These improvements were made to enhance the robot's ability to execute precise movements and solve complex tasks autonomously.
