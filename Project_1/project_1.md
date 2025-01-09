@@ -42,7 +42,7 @@ View the movement fuctions testing in this short [video](https://www.youtube.com
 
 ```
 list = [1,-1,-1,1,1,-1,1,1,-1,1,1,-1,-1,1]
-# 1 er beyja til haegri og -1 beygja til vinstri
+# 1 turn to the right and -1 turn to the right
 
 for i in list {
   move(forward, 50, mm)
