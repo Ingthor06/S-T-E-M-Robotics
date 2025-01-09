@@ -2,7 +2,7 @@
 In Project 1, we focus on programming the robot to perform a sequence of movements, starting with simple tasks and gradually increasing complexity. The robot will move forward and backward in set increments, using loops and logic to automate the process. We will document the process with flowcharts, write clean and efficient code, and demonstrate the robot's functionality through videos.
 
 ## Part 1:
-> Suðukóðinn fyrir fyrsta hluta
+> The welding code for part 1
 
 ```
 for (i = 1..5) {
@@ -38,7 +38,7 @@ View the movement fuctions testing in this short [video](https://www.youtube.com
 
 ## Part 2:
 
-> Suðukóðinn fyrir seinni hluta
+> The welding code for part 2
 
 ```
 list = [1,-1,-1,1,1,-1,1,1,-1,1,1,-1,-1,1]
