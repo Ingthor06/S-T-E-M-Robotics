@@ -93,7 +93,7 @@ brain Brain;
 // VEXcode device constructors
 motor LeftDriveSmart = motor(PORT1, ratio18_1, false);
 motor RightDriveSmart = motor(PORT3, ratio18_1, true);
-gyro TurnGyroSmart = gyro(Brain.ThreeWirePort.D);
+gyro TurnGyroSmart = gyro(Brain.ThreeWirePort.H);
 smartdrive Drivetrain = smartdrive(LeftDriveSmart, RightDriveSmart,
                                    TurnGyroSmart, 319.19, 320, 130, mm, 1);
 
@@ -115,6 +115,9 @@ void vexcodeInit(void) {
   while (TurnGyroSmart.isCalibrating()) {
     wait(25, msec);
   }
+
+  Drivetrain.setTurnVelocity(100, rpm);
+  Drivetrain.setDriveVelocity(100, rpm);
   // reset the screen now that the calibration is complete
   Brain.Screen.clearScreen();
   Brain.Screen.setCursor(1, 1);
