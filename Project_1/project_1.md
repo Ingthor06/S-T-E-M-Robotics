@@ -1,6 +1,7 @@
 # Project 1
 
 ## Codes:
+### Main:
 ```py
 #include "vex.h"
 
@@ -24,7 +25,7 @@ int main() {
 }
 ```
 
-### Robot-Config
+### Robot-Config:
 ```py
 #include "vex.h"
 
