@@ -9,7 +9,7 @@ All driving of the car is controlled with the left switch only, both for driving
 
 ## Part 1:
 ### Main:
-> Main code for Part 1 including left stick movement and wireless controls
+> Main code for **Part 1** including left stick movement and wireless controls
 ```py
   while (true) {
     // Set the left and right motor velocities based on the joystick position
