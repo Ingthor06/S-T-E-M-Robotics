@@ -1,4 +1,9 @@
 # Project 1
+
+### Íslenska:
+Í verkefni 1 leggjum við áherslu á að forrita vélmennið til að framkvæma röð hreyfinga, byrjað á einföldum verkefnum og smám saman að auka flókið. Vélmennið mun fara fram og aftur í ákveðnum þrepum og notar lykkjur og rökfræði til að gera ferlið sjálfvirkt. Við munum skrá ferlið með flæðiritum, skrifa hreinan og skilvirkan kóða og sýna fram á virkni vélmennisins með myndböndum.
+
+### Enska:
 In Project 1, we focus on programming the robot to perform a sequence of movements, starting with simple tasks and gradually increasing complexity. The robot will move forward and backward in set increments, using loops and logic to automate the process. We will document the process with flowcharts, write clean and efficient code, and demonstrate the robot's functionality through videos.
 
 ## Part 1:
