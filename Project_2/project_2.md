@@ -25,6 +25,8 @@ All driving of the car is controlled with the left switch only, both for driving
   }
 ```
 
+## Part 2:
+
 ## Robot-Config:
 ```py
 #include "vex.h"
