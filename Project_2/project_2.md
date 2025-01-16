@@ -56,3 +56,41 @@ void vexcodeInit( void ) {
   // nothing to initialize
 }
 ```
+
+hluti 2 stoppa biliin (virkar ekki alveg)
+
+```
+#include "vex.h"
+
+using namespace vex;
+
+int main() {
+  // Initializing Robot Configuration. DO NOT REMOVE!
+  vexcodeInit();
+  // turns the robot left 90 degrees
+  int rightOrLeft[] = {1,-1,-1,1,1,-1,1,1,-1,1,1,-1,-1,1};
+
+  /*while(true) {
+    Brain.Screen.clearLine(1);
+    Brain.Screen.setCursor(1,1);
+    Brain.Screen.print("Stop Button Value: %d", stopButton.value());
+    wait(0.1, seconds);
+  }*/
+
+  int i = 0;
+
+  while (!stopButton.value() && i<=14) {
+      int direction = rightOrLeft[i];
+      Drivetrain.driveFor(forward, 500, mm);
+      wait(0.5, seconds);
+      Drivetrain.turnFor(right, 90*direction, degrees);
+      wait(0.5, seconds);
+      i++;
+    }
+    
+    Brain.Screen.print("WHILE LOOP DONE");
+    Drivetrain.driveFor(forward, 500, mm);
+  
+  Drivetrain.stop();
+}
+```
