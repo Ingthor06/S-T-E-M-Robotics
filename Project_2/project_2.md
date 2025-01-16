@@ -28,53 +28,6 @@ All driving of the car is controlled with the left switch only, both for driving
 ## Part 2:
 ### Main:
 ```py
-#include "vex.h"
-
-using namespace vex;
-
-// Declare Controller event callbacks.
-void whenControllerL1Pressed() {
-  ArmMotor.spin(forward);
-  waitUntil(!Controller1.ButtonL1.pressing());
-  ArmMotor.stop();
-}
-void whenControllerL2Pressed() {
-  ArmMotor.spin(reverse);
-  waitUntil(!Controller1.ButtonL2.pressing());
-  ArmMotor.stop();
-}
-void whenControllerR1Pressed() {
-  ClawMotor.spin(reverse);
-  waitUntil(!Controller1.ButtonR1.pressing());
-  ClawMotor.stop();
-}
-void whenControllerR2Pressed() {
-  ClawMotor.spin(forward);
-  waitUntil(!Controller1.ButtonR2.pressing());
-  ClawMotor.stop();
-}
-
-// Emergency stop function when the X button is pressed
-void emergencyStop() {
-  LeftMotor.stop();
-  RightMotor.stop();
-  ClawMotor.stop();
-  ArmMotor.stop();
-}
-
-int main() {
-  // Initializing Robot Configuration. DO NOT REMOVE!
-  vexcodeInit();
-
-  // Initialize the Controller Events
-  Controller1.ButtonL1.pressed(whenControllerL1Pressed);
-  Controller1.ButtonL2.pressed(whenControllerL2Pressed);
-  Controller1.ButtonR1.pressed(whenControllerR1Pressed);
-  Controller1.ButtonR2.pressed(whenControllerR2Pressed);
-
-  // Add X button press event for emergency stop
-  Controller1.ButtonX.pressed(emergencyStop);
-
   float fastspeed = 0.5;  // Emergency stop when X is pressed
   float slowspeed = 0.1;  // Emergency stop when X is pressed
 
