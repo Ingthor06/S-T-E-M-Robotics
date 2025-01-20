@@ -115,8 +115,7 @@ int main() {
 
 ## Part 3:
 
-![Robot Radius Movements](https://github.com/user-attachments/assets/cbd70950-7ff5-47cd-b766-8862bf0999a3)
-
+![Radius 1](https://github.com/user-attachments/assets/3f05ee2f-c10d-4a06-a513-f469897f3ad5)
 
 
 ## Robot-Config:
