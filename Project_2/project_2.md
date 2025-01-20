@@ -73,41 +73,42 @@ All driving of the car is controlled with the left switch only, both for driving
 }
 ```
 
-hluti 2 stoppa biliin (virkar ekki alveg)
+##Hluti 2 stoppa biliin kóði:
 
-```
+```py
 #include "vex.h"
 
 using namespace vex;
 
+int drivePuzzle() {
+   
+  int rightOrLeft[] = {1,-1,-1,1,1,-1,1,1,-1,1,1,-1,-1,1};
+  /*1 for turning right and -1 to turn left*/
+
+  for (int i=0; i<14; i++) {
+    int direction = rightOrLeft[i];
+        Drivetrain.driveFor(forward, 500, mm);
+        wait(0.5, seconds);
+        Drivetrain.turnFor(right, 90*direction, degrees);
+        wait(0.5, seconds);
+  }
+  Drivetrain.driveFor(forward, 500, mm);
+  return 0;
+}
+
 int main() {
   // Initializing Robot Configuration. DO NOT REMOVE!
   vexcodeInit();
-  // turns the robot left 90 degrees
-  int rightOrLeft[] = {1,-1,-1,1,1,-1,1,1,-1,1,1,-1,-1,1};
 
-  /*while(true) {
-    Brain.Screen.clearLine(1);
-    Brain.Screen.setCursor(1,1);
-    Brain.Screen.print("Stop Button Value: %d", stopButton.value());
-    wait(0.1, seconds);
-  }*/
+  thread driver = thread(drivePuzzle);
 
-  int i = 0;
-
-  while (!stopButton.value() && i<=14) {
-      int direction = rightOrLeft[i];
-      Drivetrain.driveFor(forward, 500, mm);
-      wait(0.5, seconds);
-      Drivetrain.turnFor(right, 90*direction, degrees);
-      wait(0.5, seconds);
-      i++;
+  while (true)
+  {
+    if (stopButton.value() || Controller.ButtonX.pressing()) {
+      driver.interruptAll();
+      Drivetrain.stop();
     }
-    
-    Brain.Screen.print("WHILE LOOP DONE");
-    Drivetrain.driveFor(forward, 500, mm);
-  
-  Drivetrain.stop();
+  } 
 }
 ```
 
