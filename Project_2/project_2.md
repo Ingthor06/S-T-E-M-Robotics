@@ -73,7 +73,7 @@ All driving of the car is controlled with the left switch only, both for driving
 }
 ```
 
-##Hluti 2 stoppa biliin kóði:
+### Hluti 2 stoppa biliin kóði:
 
 ```py
 #include "vex.h"
