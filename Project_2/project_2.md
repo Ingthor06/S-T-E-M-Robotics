@@ -113,6 +113,11 @@ int main() {
 ```
 
 
+## Part 3:
+
+![Robot Radius Movements](https://github.com/user-attachments/assets/cbd70950-7ff5-47cd-b766-8862bf0999a3)
+
+
 
 ## Robot-Config:
 ```py
