@@ -59,8 +59,30 @@ To control the crane, use L1 to go up and L2 to go down, then use R1 to open the
 ```
 
 ## Part 2
-### Main code:
-> Emergency stop bumper and X button code
+
+### Emergency stop suðukóði
+
+```
+thread {
+  [--------------------------------------]
+  [ all the code from verkefni 1 hluti 2 ]
+  [--------------------------------------]
+}
+
+void main {
+  run thread()
+
+  while (true) {
+    if (buttonX_pressing or bumper_pressed) {
+      stop thread() 
+      stop drivetrain()
+    }
+  }
+}
+```
+
+### Emergency stop bumper and X button code
+
 ```cpp
 #include "vex.h"
 
@@ -179,7 +201,6 @@ int main() {
         vex::wait(100, msec);
     }
 }
-
 ```
 
 ## Robot-Config:
