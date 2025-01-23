@@ -117,6 +117,79 @@ int main() {
 
 ![Radius 1](https://github.com/user-attachments/assets/3f05ee2f-c10d-4a06-a513-f469897f3ad5)
 
+```py
+#include "vex.h"
+
+using namespace vex;
+
+// Function to drive the robot in a circle
+void driveCircle(float speed, float radius) {
+    float leftSpeed = speed;
+    float rightSpeed = speed;
+
+    if (radius > 0) {
+        // Larger circle: inside wheel (right) goes slower
+        rightSpeed = speed * (1 - 1 / radius);
+    } else if (radius < 0) {
+        // Negative radius (opposite direction)
+        leftSpeed = speed * (1 - 1 / radius);
+    }
+
+    // Set the speeds for left and right motors to create a circle
+    LeftMotor.spin(vex::directionType::fwd, leftSpeed, vex::velocityUnits::pct);
+    RightMotor.spin(vex::directionType::fwd, rightSpeed, vex::velocityUnits::pct);
+}
+
+// Function to drive multiple circles using the gyro
+void circleDriveWithGyro() {
+    float radii[] = {1.5, 2, 2.5};  // Radii for the circles
+    int numCircles = sizeof(radii) / sizeof(radii[0]);
+    float speed = 50;
+
+    // Reset the gyro sensor
+    TurnGyroSmart.resetRotation();
+
+    for (int i = 0; i < numCircles; i++) {
+        float radius = radii[i];
+
+        // Start driving in a circle
+        driveCircle(speed, radius);
+
+        // Wait until the robot completes a 360° turn
+        while (TurnGyroSmart.rotation(degrees) < 360) {
+            vex::wait(20, msec);  // Prevent excessive CPU usage
+        }
+
+        // Stop motors briefly after completing the circle
+        LeftMotor.stop();
+        RightMotor.stop();
+
+        // Reset the gyro for the next circle
+        TurnGyroSmart.resetRotation();
+
+        // Optional delay between circles
+        vex::wait(100, msec);
+    }
+
+    // Stop the robot completely
+    LeftMotor.stop();
+    RightMotor.stop();
+}
+
+int main() {
+    // Initialize devices and the robot
+    vexcodeInit();
+
+    // Execute circle driving logic
+    circleDriveWithGyro();
+
+    // Keep the program alive
+    while (true) {
+        vex::wait(100, msec);
+    }
+}
+
+```
 
 ## Robot-Config:
 ```py
