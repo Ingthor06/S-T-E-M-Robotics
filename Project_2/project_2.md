@@ -202,24 +202,44 @@ using signature = vision::signature;
 using code = vision::code;
 
 // A global instance of brain used for printing to the V5 Brain screen
-brain  Brain;
+brain Brain;
 
 // VEXcode device constructors
-controller Controller1 = controller(primary);
 motor LeftMotor = motor(PORT1, ratio18_1, false);
 motor RightMotor = motor(PORT3, ratio18_1, true);
 motor ClawMotor = motor(PORT4, ratio18_1, false);
 motor ArmMotor = motor(PORT5, ratio18_1, false);
+bumper BumperA = bumper(Brain.ThreeWirePort.A);
+gyro TurnGyroSmart = gyro(Brain.ThreeWirePort.H);
+smartdrive Drivetrain = smartdrive(LeftMotor, RightMotor,
+                                   TurnGyroSmart, 319.19, 320, 130, mm, 1);
+
 
 // VEXcode generated functions
 
 /**
  * Used to initialize code/tasks/devices added using tools in VEXcode Pro.
- * 
+ *
  * This should be called at the start of your int main function.
  */
-void vexcodeInit( void ) {
-  // nothing to initialize
+// VEXcode generated functions
+void vexcodeInit(void) {
+  Brain.Screen.print("Device initialization...");
+  Brain.Screen.setCursor(2, 1);
+  
+  wait(200, msec);
+  TurnGyroSmart.startCalibration(1);
+  Brain.Screen.print("Calibrating Gyro for Drivetrain");
+  
+  // Wait for gyro calibration to finish
+  while (TurnGyroSmart.isCalibrating()) {
+    wait(25, msec);
+  }
+
+  Brain.Screen.clearScreen();
+  Brain.Screen.setCursor(1, 1);
+  wait(50, msec);
+  Brain.Screen.clearScreen();
 }
 ```
 
