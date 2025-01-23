@@ -105,7 +105,7 @@ This program controls a VEX V5 robot to drive in circular paths using a gyro sen
 
 [Testrun video](https://youtu.be/gvW6Mg6NpgM)
 
-```py
+```cpp
 #include "vex.h"
 
 using namespace vex;
@@ -180,7 +180,7 @@ int main() {
 ```
 
 ## Robot-Config:
-```py
+```cpp
 #include "vex.h"
 
 using namespace vex;
