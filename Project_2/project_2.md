@@ -42,36 +42,6 @@ void whenControllerR2Pressed() {
 }
 
 
-void BumperPressed() {
-  // Clear the screen line before printing
-  Brain.Screen.setCursor(5, 1);
-  Brain.Screen.clearLine();
-
-  // Check if the bumper switch is pressed
-  if (BumperA.pressing()) {
-    // Display message
-    Brain.Screen.print("Emergency Stop Activated!");
-
-    // Stop all motors immediately
-    LeftMotor.stop();
-    RightMotor.stop();
-    ClawMotor.stop();
-    ArmMotor.stop();
-  }
-}
-
-
-
-// Emergency stop function when the X button is pressed
-void emergencyStop() {
-  LeftMotor.stop();
-  RightMotor.stop();
-  ClawMotor.stop();
-  ArmMotor.stop();
-}
-
-
-
 int main() {
   // Initializing Robot Configuration. DO NOT REMOVE!
   vexcodeInit();
@@ -81,9 +51,6 @@ int main() {
   Controller1.ButtonL2.pressed(whenControllerL2Pressed);
   Controller1.ButtonR1.pressed(whenControllerR1Pressed);
   Controller1.ButtonR2.pressed(whenControllerR2Pressed);
-
-  // Add X button press event for emergency stop
-  Controller1.ButtonX.pressed(emergencyStop);
 
   float fastspeed = 0.5;  // Emergency stop when X is pressed
   float slowspeed = 0.1;  // Emergency stop when X is pressed
@@ -107,27 +74,9 @@ int main() {
       LeftMotor.setVelocity((Controller1.Axis2.position() + Controller1.Axis1.position())*slowspeed, percent);
       RightMotor.setVelocity((Controller1.Axis2.position() - Controller1.Axis1.position())*slowspeed, percent);
     }
-
     
     LeftMotor.spin(forward);
     RightMotor.spin(forward);
-
-
-
-    // Display motor velocities and joystick values on the screen
-    Brain.Screen.setCursor(1, 1);
-    Brain.Screen.print("Left Motor Velocity: %d", LeftMotor.velocity(percent));
-    Brain.Screen.setCursor(2, 1);
-    Brain.Screen.print("Right Motor Velocity: %d", RightMotor.velocity(percent));
-
-    Brain.Screen.setCursor(3, 1);
-    Brain.Screen.clearLine(3);
-    Brain.Screen.print("Joystick X: %d", Controller1.Axis3.position());
-    Brain.Screen.setCursor(4, 1);
-    Brain.Screen.clearLine(4);
-    Brain.Screen.print("Joystick Y: %d", Controller1.Axis4.position());
-
-    BumperA.pressed(BumperPressed);
 
     wait(25, msec);
   }
