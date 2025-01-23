@@ -57,15 +57,15 @@ To control the crane, use L1 to go up and L2 to go down, then use R1 to open the
 }
 ```
 
-### Emergency stop bumper button:
+## Part 2
+### Emergency stop bumper and X button code
 
-
-```py
+```cpp
 #include "vex.h"
 
 using namespace vex;
 
-int drivePuzzle() {
+int drivePuzzle() { // This is the old code from verkefni 1 hluti 2 put into a thread
    
   int rightOrLeft[] = {1,-1,-1,1,1,-1,1,1,-1,1,1,-1,-1,1};
   /*1 for turning right and -1 to turn left*/
@@ -85,9 +85,9 @@ int main() {
   // Initializing Robot Configuration. DO NOT REMOVE!
   vexcodeInit();
 
-  thread driver = thread(drivePuzzle);
+  thread driver = thread(drivePuzzle); // run the original code
 
-  while (true)
+  while (true) // check for emergancy stop inputs and stops the car if need be
   {
     if (stopButton.value() || Controller.ButtonX.pressing()) {
       driver.interruptAll();
