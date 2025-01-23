@@ -11,6 +11,9 @@ To control the crane, use L1 to go up and L2 to go down, then use R1 to open the
 ## Part 1:
 ### Main code:
 > Wireless Controller functionality and activity
+
+[Testrun Video](https://youtu.be/ACWBoWRuvFU)
+
 ```cpp
 #include "vex.h"
 
@@ -133,7 +136,7 @@ int main() {
 
 ## Part 2
 
-### Emergency stop suðukóði
+### Emergency stop welding code:
 
 ```
 thread {
@@ -155,6 +158,8 @@ void main {
 ```
 
 ### Emergency stop bumper and X button code
+
+[Testrun Video](https://youtu.be/2j-ayJ0NSB8)
 
 ```cpp
 #include "vex.h"
