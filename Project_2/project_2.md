@@ -31,7 +31,7 @@ To control the crane, use L1 to go up and L2 to go down, then use R1 to open the
     LeftMotor.setVelocity((Controller1.Axis3.position() + Controller1.Axis4.position())*fastspeed, percent);
     RightMotor.setVelocity((Controller1.Axis3.position() - Controller1.Axis4.position())*fastspeed, percent);
 
-    if(Controller1.Axis3.position() == 0 && Controller1.Axis3.position() == 0) {
+    if(Controller1.Axis3.position() == 0 && Controller1.Axis4.position() == 0) {
       LeftMotor.setVelocity((Controller1.Axis2.position() + Controller1.Axis1.position())*slowspeed, percent);
       RightMotor.setVelocity((Controller1.Axis2.position() - Controller1.Axis1.position())*slowspeed, percent);
     }
@@ -173,7 +173,6 @@ int circleDriveWithGyro() {
         // Reset the gyro for the next circle
         TurnGyroSmart.resetRotation();
 
-        // Optional delay between circles
         wait(100, msec);
     }
 
