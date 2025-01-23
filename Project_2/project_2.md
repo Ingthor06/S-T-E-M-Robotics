@@ -9,28 +9,10 @@ Each joystick is able to control the car in all directions. With the left joysti
 To control the crane, use L1 to go up and L2 to go down, then use R1 to open the claw and R2 to close it.
 
 ## Part 1:
-### Main:
-> Main code for **Part 1** including left stick movement and wireless controls
+### Main code:
 ```cpp
-  while (true) {
-    // Set the left and right motor velocities based on the joystick position
-    LeftMotor.setVelocity(Controller1.Axis3.position() + Controller1.Axis4.position(), percent);
-    RightMotor.setVelocity(Controller1.Axis3.position() - Controller1.Axis4.position(), percent);
-
-    // Spin the motors forward, as their velocities are set by the joysticks
-    LeftMotor.spin(forward);
-    RightMotor.spin(forward);
-
-    // Delay for more precise controls
-    wait(25, msec);
-  }
-```
-
-## Part 2:
-### Main:
-```py
-  float fastspeed = 0.5;  // Emergency stop when X is pressed
-  float slowspeed = 0.1;  // Emergency stop when X is pressed
+  float fastspeed = 0.5;  // Right joystick
+  float slowspeed = 0.1;  // Right Joystick
 
   // Set the brake mode and velocity of the ArmMotor and ClawMotor
   ClawMotor.setStopping(hold);
@@ -44,6 +26,7 @@ To control the crane, use L1 to go up and L2 to go down, then use R1 to open the
   // Use tank drive to control the robot.
   while (true) {
 
+    // Some mathematics to convert joystick position into corresponding wheel velocity
     LeftMotor.setVelocity((Controller1.Axis3.position() + Controller1.Axis4.position())*fastspeed, percent);
     RightMotor.setVelocity((Controller1.Axis3.position() - Controller1.Axis4.position())*fastspeed, percent);
 
@@ -52,7 +35,7 @@ To control the crane, use L1 to go up and L2 to go down, then use R1 to open the
       RightMotor.setVelocity((Controller1.Axis2.position() - Controller1.Axis1.position())*slowspeed, percent);
     }
 
-    
+    // Starts moving the wheels according to the given velocities
     LeftMotor.spin(forward);
     RightMotor.spin(forward);
 
