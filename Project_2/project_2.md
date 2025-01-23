@@ -57,7 +57,8 @@ To control the crane, use L1 to go up and L2 to go down, then use R1 to open the
 }
 ```
 
-### Hluti 2 stoppa biliin kóði:
+### Emergency stop bumper button:
+
 
 ```py
 #include "vex.h"
