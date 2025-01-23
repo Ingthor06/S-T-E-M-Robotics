@@ -10,6 +10,7 @@ To control the crane, use L1 to go up and L2 to go down, then use R1 to open the
 
 ## Part 1:
 ### Main code:
+> Wireless Controller functionality and activity
 ```cpp
   float fastspeed = 0.5;  // Right joystick
   float slowspeed = 0.1;  // Right Joystick
@@ -62,7 +63,6 @@ To control the crane, use L1 to go up and L2 to go down, then use R1 to open the
 ### Emergency stop suðukóði
 
 ```
-
 thread {
   [--------------------------------------]
   [ all the code from verkefni 1 hluti 2 ]
@@ -129,6 +129,7 @@ This program controls a VEX V5 robot to drive in circular paths using a gyro sen
 [Testrun video](https://youtu.be/gvW6Mg6NpgM)
 
 ### Main code:
+> Precise and accurate radius turns
 ```cpp
 #include "vex.h"
 
@@ -200,7 +201,6 @@ int main() {
         vex::wait(100, msec);
     }
 }
-
 ```
 
 ## Robot-Config:
