@@ -66,4 +66,5 @@ Additionally, pressing the 'X' button on the wireless controller also triggers t
 + Gyro Sensor for Circular Movement:
 We integrated the gyro sensor to detect 360-degree rotations when the robot drove in a circle.
 After completing the first 360-degree circle, the robot moved to a larger circle, progressing by increasing the circle size each time it completed a full rotation.
+
 The robot continued this pattern until it had completed three progressively larger circles.
