@@ -246,7 +246,6 @@ int circleDriveWithGyro() {
         // Reset the gyro for the next circle
         TurnGyroSmart.resetRotation();
 
-        // Optional delay between circles
         wait(100, msec);
     }
 
