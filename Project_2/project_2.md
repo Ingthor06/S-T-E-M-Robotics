@@ -117,7 +117,7 @@ int main() {
 
 ![Radius 1](https://github.com/user-attachments/assets/3f05ee2f-c10d-4a06-a513-f469897f3ad5)
 
-![Testrun video](https://youtu.be/gvW6Mg6NpgM)
+[Testrun video](https://youtu.be/gvW6Mg6NpgM)
 
 ```py
 #include "vex.h"
