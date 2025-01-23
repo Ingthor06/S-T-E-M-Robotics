@@ -1,11 +1,12 @@
 # Project 2
 
 ### Íslenska:
-Öll keyrsla á bílnum er strjórnað með einungis vinstri rofanum, bæði til að keyra beint fram og aftan og til að beygja.
+Hver rofi er hæfur að stjórna bílnum í allar áttir. Með vinstri rofanum keyrir bílinn hratt, með hægri rofanum keyrir bílinn hægt fyrir meiri nákvæmni. Annars er stjórnun með báðum rofum alveg eins.
 Til þess að stjórna krananum eru notaður L1 til að fara upp og L2 til að fara niður og svo nota R1 til að opna klónna og R2 til að loka henni.
 
 ### English:
-All driving of the car is controlled with the left switch only, both for driving straight forward and backward and for turning. To control the crane, use L1 to go up and L2 to go down, then use R1 to open the claws and R2 to close them.
+Each joystick is able to control the car in all directions. With the left joystick you can drive fast, and with the right joytick you can be slow and precise. The contols for each joystick is otherwise the same.
+To control the crane, use L1 to go up and L2 to go down, then use R1 to open the claw and R2 to close it.
 
 ## Part 1:
 ### Main:
