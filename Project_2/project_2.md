@@ -11,7 +11,7 @@ To control the crane, use L1 to go up and L2 to go down, then use R1 to open the
 ## Part 1:
 ### Main:
 > Main code for **Part 1** including left stick movement and wireless controls
-```py
+```cpp
   while (true) {
     // Set the left and right motor velocities based on the joystick position
     LeftMotor.setVelocity(Controller1.Axis3.position() + Controller1.Axis4.position(), percent);
