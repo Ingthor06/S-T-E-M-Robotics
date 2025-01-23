@@ -39,9 +39,31 @@ A class project exploring **STEM** *(Science, Technology, Engineering, and Mathe
 In [Project 1](Project_1/project_1.md), we focused on programming a VEX Robotics robot to execute a series of movements and solve a specific path-following challenge. The following tasks were completed:
 
 + Forward and Reverse Movements: Programmed the robot to drive forward and backward for precise distances.
+
 + Accuracy in Positioning: Ensured that the robot remained within a 20 cm tolerance from its starting point after completing each sequence of movements.
+
 + Gyro Integration: Added a gyro sensor to the robot's hardware configuration, enabling accurate turns and enhanced control.
+
 + Fixed Turning Directions: Corrected the turning behavior by adjusting motor configurations, ensuring the robot turns as expected.
+
 + Path Following: Coded the robot to autonomously follow a difficult, predefined path with accuracy using the drivetrain and sensors.
+
   
 These improvements were made to enhance the robot's ability to execute precise movements and solve complex tasks autonomously.
+
+
+## Project 2
+### Overview:
+In [Project 2](Project_2/project_2.md), we focused on programming the functionality of the VEX V5 robot using a wireless controller. The main objectives were:
+
++ Wireless Controller:
+We implemented functionality for the wireless controller, where each button was assigned a specific action, ensuring smooth connectivity between the controller and the robot.
+
++ Emergency Stop:
+We created an emergency stop mechanism by mapping the bumper on the V5 robot to stop all movements instantly.
+Additionally, pressing the 'X' button on the wireless controller also triggers the emergency stop, ensuring safety during operation.
+
++ Gyro Sensor for Circular Movement:
+We integrated the gyro sensor to detect 360-degree rotations when the robot drove in a circle.
+After completing the first 360-degree circle, the robot moved to a larger circle, progressing by increasing the circle size each time it completed a full rotation.
+The robot continued this pattern until it had completed three progressively larger circles.
