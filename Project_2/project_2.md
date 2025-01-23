@@ -12,8 +12,78 @@ To control the crane, use L1 to go up and L2 to go down, then use R1 to open the
 ### Main code:
 > Wireless Controller functionality and activity
 ```cpp
-  float fastspeed = 0.5;  // Right joystick
-  float slowspeed = 0.1;  // Right Joystick
+#include "vex.h"
+
+using namespace vex;
+
+// Declare Controller event callbacks.
+void whenControllerL1Pressed() {
+  ArmMotor.spin(forward);
+  waitUntil(!Controller1.ButtonL1.pressing());
+  ArmMotor.stop();
+}
+void whenControllerL2Pressed() {
+  ArmMotor.spin(reverse);
+  waitUntil(!Controller1.ButtonL2.pressing());
+  ArmMotor.stop();
+}
+void whenControllerR1Pressed() {
+  ClawMotor.spin(reverse);
+  waitUntil(!Controller1.ButtonR1.pressing());
+  ClawMotor.stop();
+}
+void whenControllerR2Pressed() {
+  ClawMotor.spin(forward);
+  waitUntil(!Controller1.ButtonR2.pressing());
+  ClawMotor.stop();
+}
+
+
+void BumperPressed() {
+  // Clear the screen line before printing
+  Brain.Screen.setCursor(5, 1);
+  Brain.Screen.clearLine();
+
+  // Check if the bumper switch is pressed
+  if (BumperA.pressing()) {
+    // Display message
+    Brain.Screen.print("Emergency Stop Activated!");
+
+    // Stop all motors immediately
+    LeftMotor.stop();
+    RightMotor.stop();
+    ClawMotor.stop();
+    ArmMotor.stop();
+  }
+}
+
+
+
+// Emergency stop function when the X button is pressed
+void emergencyStop() {
+  LeftMotor.stop();
+  RightMotor.stop();
+  ClawMotor.stop();
+  ArmMotor.stop();
+}
+
+
+
+int main() {
+  // Initializing Robot Configuration. DO NOT REMOVE!
+  vexcodeInit();
+
+  // Initialize the Controller Events
+  Controller1.ButtonL1.pressed(whenControllerL1Pressed);
+  Controller1.ButtonL2.pressed(whenControllerL2Pressed);
+  Controller1.ButtonR1.pressed(whenControllerR1Pressed);
+  Controller1.ButtonR2.pressed(whenControllerR2Pressed);
+
+  // Add X button press event for emergency stop
+  Controller1.ButtonX.pressed(emergencyStop);
+
+  float fastspeed = 0.5;  // Emergency stop when X is pressed
+  float slowspeed = 0.1;  // Emergency stop when X is pressed
 
   // Set the brake mode and velocity of the ArmMotor and ClawMotor
   ClawMotor.setStopping(hold);
@@ -27,18 +97,19 @@ To control the crane, use L1 to go up and L2 to go down, then use R1 to open the
   // Use tank drive to control the robot.
   while (true) {
 
-    // Some mathematics to convert joystick position into corresponding wheel velocity
     LeftMotor.setVelocity((Controller1.Axis3.position() + Controller1.Axis4.position())*fastspeed, percent);
     RightMotor.setVelocity((Controller1.Axis3.position() - Controller1.Axis4.position())*fastspeed, percent);
 
-    if(Controller1.Axis3.position() == 0 && Controller1.Axis3.position() == 0) {
+    if(Controller1.Axis3.position() == 0 && Controller1.Axis4.position() == 0) {
       LeftMotor.setVelocity((Controller1.Axis2.position() + Controller1.Axis1.position())*slowspeed, percent);
       RightMotor.setVelocity((Controller1.Axis2.position() - Controller1.Axis1.position())*slowspeed, percent);
     }
 
-    // Starts moving the wheels according to the given velocities
+    
     LeftMotor.spin(forward);
     RightMotor.spin(forward);
+
+
 
     // Display motor velocities and joystick values on the screen
     Brain.Screen.setCursor(1, 1);
@@ -52,6 +123,8 @@ To control the crane, use L1 to go up and L2 to go down, then use R1 to open the
     Brain.Screen.setCursor(4, 1);
     Brain.Screen.clearLine(4);
     Brain.Screen.print("Joystick Y: %d", Controller1.Axis4.position());
+
+    BumperA.pressed(BumperPressed);
 
     wait(25, msec);
   }
