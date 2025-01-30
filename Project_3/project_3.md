@@ -1,6 +1,37 @@
 # Project 3
 
 ## Part 1
+
+### Suðukóði
+
+```
+def LightsOff() {
+	drivetrain.stop()
+	wait_until(lightsensor.value() < 2)
+}
+
+def CheckAround() {
+	turn(left, 90deg)
+	if distance > 1meter { return }
+	turn(right, 180deg)
+	if distance > 1meter { return }
+	turn(right, 90deg)
+}
+
+void main {
+
+	light.changed(LightsOff)
+
+	white(true) {
+		drivetrain.drive(forward)
+
+		if distance < 0.5meter {
+			drivetrain.stop()
+			CheckAround()
+		}
+	}
+```
+
 ### Main:
 ```cpp
 #include "vex.h"
