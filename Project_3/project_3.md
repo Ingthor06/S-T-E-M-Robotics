@@ -32,6 +32,8 @@ void main {
 	}
 ```
 
+[Testrun video](https://youtu.be/P1BteJjgTnA)
+
 ### Main:
 ```cpp
 #include "vex.h"
