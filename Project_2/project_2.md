@@ -153,7 +153,7 @@ This program controls a VEX V5 robot to drive in circular paths using a gyro sen
 
 ![Radius 1](https://github.com/user-attachments/assets/3f05ee2f-c10d-4a06-a513-f469897f3ad5)
 
-[Testrun video](https://youtu.be/gvW6Mg6NpgM)
+[Testrun video]([https://youtu.be/gvW6Mg6NpgM](https://youtu.be/txZ1yhgCgIw))
 
 ### Main code:
 > Precise and accurate radius turns
