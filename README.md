@@ -52,6 +52,7 @@ In [Project 1](Project_1/project_1.md), we focused on programming a VEX Robotics
 These improvements were made to enhance the robot's ability to execute precise movements and solve complex tasks autonomously.
 
 
+
 ## Project 2
 ### Overview:
 In [Project 2](Project_2/project_2.md), we focused on programming the functionality of the VEX V5 robot using a wireless controller. The main objectives were:
@@ -69,14 +70,16 @@ After completing the first 360-degree circle, the robot moved to a larger circle
 
 The robot continued this pattern until it had completed three progressively larger circles.
 
+
+
 ## Project 3: Obstacle Avoidance and Vision Tracking
 In [Project 3](Project_3/project_3.md), we developed a VEX V5 robot capable of autonomous navigation and object tracking. Using an ultrasonic sensor, we programmed the robot to detect and avoid obstacles, ensuring it did not collide with walls or objects in its path. Additionally, we established a wireless connection to the Vision Sensor by connecting our phones to the VEX V5 Brain’s Wi-Fi network, allowing us to access a live camera feed for real-time monitoring. To enhance functionality, we implemented color-based object tracking, enabling the robot to identify and follow a specific target. For this demonstration, we selected a green cube, and the robot successfully tracked and followed it in real-time.
 
 + Project 3 Notes
-  + Ultrasonic Sensor: Used for obstacle detection and collision avoidance. It continuously measured the distance between the robot and nearby objects, allowing it to stop or change direction when an object was     detected within a certain range. This ensured smooth and safe navigation, preventing unintended crashes into walls or obstacles.
+  + Ultrasonic Sensor: Used for obstacle detection and collision avoidance. It continuously measured the distance between the robot and nearby objects, allowing it to stop or change direction when an object was     detected within a certain range. 
 
-  + Vision Sensor Connection: The VEX V5 Brain generated a Wi-Fi network, which we connected to using our phones. By accessing the Vision Sensor through a web browser, we were able to view the live camera feed in   real-time. This allowed us to monitor what the robot was seeing and adjust settings if necessary to improve object detection and tracking.
+  + Vision Sensor Connection: The VEX V5 Brain generated a Wi-Fi network, which we connected to using our phones. By accessing the Vision Sensor through a web browser, we were able to view the live camera feed in   real-time.
 
-  + Object & Color Tracking: We programmed the Vision Sensor to recognize and track a specific color, enabling the robot to follow an object of our choice. In this test, we selected a green cube, and the robot      successfully identified, tracked, and followed it as it moved. This demonstrated the robot's ability to respond dynamically to visual input and interact with its environment based on color recognition.
+  + Object & Color Tracking: We programmed the Vision Sensor to recognize and track a specific color, enabling the robot to follow an object of our choice. In this test, we selected a green cube, and the robot      successfully identified, tracked, and followed it as it moved. 
 
 ![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc216ZmY3N2c5Zml0eXJzamlnc2tucHNyYm82Z3drZXVycmRna2tndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NcECxf2Rurrq2VL0a9/giphy.gif)
