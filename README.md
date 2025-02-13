@@ -34,7 +34,7 @@ A class project exploring **STEM** *(Science, Technology, Engineering, and Mathe
     
   * 🧑‍💻 SOFTWARE: The software engineering is used in C++ and enables robot control through VEXcode V5 using graphical or text-based programming.
 
-## Project 1
+## Project 1 Path Movements & Gyro Sensor Installation
 ### Overview:
 In [Project 1](Project_1/project_1.md), we focused on programming a VEX Robotics robot to execute a series of movements and solve a specific path-following challenge. The following tasks were completed:
 
@@ -56,7 +56,7 @@ These improvements were made to enhance the robot's ability to execute precise m
 
 
 
-## Project 2
+## Project 2 Controller Controls & Emergency Stop Button
 ### Overview:
 In [Project 2](Project_2/project_2.md), we focused on programming the functionality of the VEX V5 robot using a wireless controller. The main objectives were:
 
@@ -80,6 +80,7 @@ The robot continued this pattern until it had completed three progressively larg
 
 
 ## Project 3: Obstacle Avoidance and Vision Tracking
+### Overview:
 In [Project 3](Project_3/project_3.md), we programmed a VEX V5 robot for autonomous navigation and object tracking. Using an ultrasonic sensor, the robot detected and avoided obstacles. We also connected to the Vision Sensor via Wi-Fi, allowing real-time access to the camera feed. Additionally, we implemented color-based object tracking, where the robot successfully followed a green cube in real-time.
 
 
