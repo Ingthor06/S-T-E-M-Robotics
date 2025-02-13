@@ -70,6 +70,7 @@ After completing the first 360-degree circle, the robot moved to a larger circle
 
 The robot continued this pattern until it had completed three progressively larger circles.
 
+![image](https://github.com/user-attachments/assets/5bbccaa3-77fa-4755-bc0a-00cec236c157)
 
 
 ## Project 3: Obstacle Avoidance and Vision Tracking
