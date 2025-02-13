@@ -48,6 +48,9 @@ In [Project 1](Project_1/project_1.md), we focused on programming a VEX Robotics
 
 + Path Following: Coded the robot to autonomously follow a difficult, predefined path with accuracy using the drivetrain and sensors.
 
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/93a77a2b-9cb6-459d-b4a5-9c3126f31800" width="700" />
+</p>
   
 These improvements were made to enhance the robot's ability to execute precise movements and solve complex tasks autonomously.
 
