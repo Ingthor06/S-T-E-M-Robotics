@@ -71,13 +71,11 @@ Additionally, pressing the 'X' button on the wireless controller also triggers t
 We integrated the gyro sensor to detect 360-degree rotations when the robot drove in a circle.
 After completing the first 360-degree circle, the robot moved to a larger circle, progressing by increasing the circle size each time it completed a full rotation.
 
-The robot continued this pattern until it had completed three progressively larger circles.
-
 <p align="left">
   <img src="https://github.com/user-attachments/assets/5bbccaa3-77fa-4755-bc0a-00cec236c157" width="300" />
 </p>
 
-
+The robot continued this pattern until it had completed three progressively larger circles.
 
 ## Project 3: Obstacle Avoidance and Vision Tracking
 ### Overview:
@@ -93,3 +91,5 @@ In [Project 3](Project_3/project_3.md), we programmed a VEX V5 robot for autonom
 <p align="center">
   <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc216ZmY3N2c5Zml0eXJzamlnc2tucHNyYm82Z3drZXVycmRna2tndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NcECxf2Rurrq2VL0a9/giphy.gif" width="550" />
 </p>
+
+When Robot detects object 40cm or 15.7 inches away from target it reverses to prevent crashing and colliding into walls, objects etc...
