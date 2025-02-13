@@ -83,4 +83,6 @@ In [Project 3](Project_3/project_3.md), we programmed a VEX V5 robot for autonom
 
 + Object & Color Tracking: We programmed the Vision Sensor to recognize and track a specific color, enabling the robot to follow an object of our choice. In this test, we selected a green cube, and the robot      successfully identified, tracked, and followed it as it moved. 
 
-![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc216ZmY3N2c5Zml0eXJzamlnc2tucHNyYm82Z3drZXVycmRna2tndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NcECxf2Rurrq2VL0a9/giphy.gif)
+<p align="center">
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc216ZmY3N2c5Zml0eXJzamlnc2tucHNyYm82Z3drZXVycmRna2tndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NcECxf2Rurrq2VL0a9/giphy.gif" width="400" />
+</p>
