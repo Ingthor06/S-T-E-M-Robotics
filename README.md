@@ -68,3 +68,13 @@ We integrated the gyro sensor to detect 360-degree rotations when the robot drov
 After completing the first 360-degree circle, the robot moved to a larger circle, progressing by increasing the circle size each time it completed a full rotation.
 
 The robot continued this pattern until it had completed three progressively larger circles.
+
+## Project 3: Obstacle Avoidance and Vision Tracking
+In [Project 3](Project_3/project_3.md), we developed a VEX V5 robot capable of autonomous navigation and object tracking. Using an ultrasonic sensor, we programmed the robot to detect and avoid obstacles, ensuring it did not collide with walls or objects in its path. Additionally, we established a wireless connection to the Vision Sensor by connecting our phones to the VEX V5 Brain’s Wi-Fi network, allowing us to access a live camera feed for real-time monitoring. To enhance functionality, we implemented color-based object tracking, enabling the robot to identify and follow a specific target. For this demonstration, we selected a green cube, and the robot successfully tracked and followed it in real-time.
+
++ Project 3 Notes
+  + Ultrasonic Sensor: Used for obstacle detection and collision avoidance. It continuously measured the distance between the robot and nearby objects, allowing it to stop or change direction when an object was     detected within a certain range. This ensured smooth and safe navigation, preventing unintended crashes into walls or obstacles.
+
+  + Vision Sensor Connection: The VEX V5 Brain generated a Wi-Fi network, which we connected to using our phones. By accessing the Vision Sensor through a web browser, we were able to view the live camera feed in   real-time. This allowed us to monitor what the robot was seeing and adjust settings if necessary to improve object detection and tracking.
+
+  + Object & Color Tracking: We programmed the Vision Sensor to recognize and track a specific color, enabling the robot to follow an object of our choice. In this test, we selected a green cube, and the robot      successfully identified, tracked, and followed it as it moved. This demonstrated the robot's ability to respond dynamically to visual input and interact with its environment based on color recognition.
