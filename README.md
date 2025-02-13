@@ -71,7 +71,7 @@ After completing the first 360-degree circle, the robot moved to a larger circle
 The robot continued this pattern until it had completed three progressively larger circles.
 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/5bbccaa3-77fa-4755-bc0a-00cec236c157" width="200" />
+  <img src="https://github.com/user-attachments/assets/5bbccaa3-77fa-4755-bc0a-00cec236c157" width="300" />
 </p>
 
 
@@ -87,5 +87,5 @@ In [Project 3](Project_3/project_3.md), we programmed a VEX V5 robot for autonom
 + Object & Color Tracking: We programmed the Vision Sensor to recognize and track a specific color, enabling the robot to follow an object of our choice. In this test, we selected a green cube, and the robot      successfully identified, tracked, and followed it as it moved. 
 
 <p align="center">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc216ZmY3N2c5Zml0eXJzamlnc2tucHNyYm82Z3drZXVycmRna2tndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NcECxf2Rurrq2VL0a9/giphy.gif" width="600" />
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc216ZmY3N2c5Zml0eXJzamlnc2tucHNyYm82Z3drZXVycmRna2tndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NcECxf2Rurrq2VL0a9/giphy.gif" width="550" />
 </p>
