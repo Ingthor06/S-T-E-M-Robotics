@@ -103,7 +103,7 @@ int main() {
 
 ## Part 2
 
-![VEX_Camera_Screenshot](https://github.com/user-attachments/assets/cfd163fd-0c92-4e29-9e6b-120524791d7b)
+![Screenshot 2025-02-13 090930](https://github.com/user-attachments/assets/498dc82f-c58b-418b-834f-1eee990043d9)
 
 
 ## Part 3
