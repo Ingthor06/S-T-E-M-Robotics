@@ -73,7 +73,7 @@ The robot continued this pattern until it had completed three progressively larg
 
 
 ## Project 3: Obstacle Avoidance and Vision Tracking
-In [Project 3](Project_3/project_3.md), we developed a VEX V5 robot capable of autonomous navigation and object tracking. Using an ultrasonic sensor, we programmed the robot to detect and avoid obstacles, ensuring it did not collide with walls or objects in its path. Additionally, we established a wireless connection to the Vision Sensor by connecting our phones to the VEX V5 Brain’s Wi-Fi network, allowing us to access a live camera feed for real-time monitoring. To enhance functionality, we implemented color-based object tracking, enabling the robot to identify and follow a specific target. For this demonstration, we selected a green cube, and the robot successfully tracked and followed it in real-time.
+In [Project 3](Project_3/project_3.md), we programmed a VEX V5 robot for autonomous navigation and object tracking. Using an ultrasonic sensor, the robot detected and avoided obstacles. We also connected to the Vision Sensor via Wi-Fi, allowing real-time access to the camera feed. Additionally, we implemented color-based object tracking, where the robot successfully followed a green cube in real-time.
 
 
 + Ultrasonic Sensor: Used for obstacle detection and collision avoidance. It continuously measured the distance between the robot and nearby objects, allowing it to stop or change direction when an object was     detected within a certain range. 
