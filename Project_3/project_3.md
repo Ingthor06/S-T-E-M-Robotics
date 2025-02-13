@@ -2,7 +2,7 @@
 
 ## Part 1
 
-### Suðukóði
+### Welding Code:
 
 ```
 def LightsOff() { 
@@ -36,6 +36,7 @@ void main {
 
 [Testrun video](https://youtu.be/P1BteJjgTnA)
 
+> VEX Robot looks to detect best pathway to drive forward
 ```cpp
 #include "vex.h"
 
@@ -102,6 +103,7 @@ int main() {
 ```
 
 ## Part 2
+> Vision Sensor connection through phones
 
 ![Screenshot 2025-02-13 090930](https://github.com/user-attachments/assets/b7fe88f6-a260-4aca-a8f3-088d2577b82c)
 
@@ -204,7 +206,7 @@ int main() {
 }
 ```
 <p align="center">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc216ZmY3N2c5Zml0eXJzamlnc2tucHNyYm82Z3drZXVycmRna2tndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NcECxf2Rurrq2VL0a9/giphy.gif" width="550" />
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc216ZmY3N2c5Zml0eXJzamlnc2tucHNyYm82Z3drZXVycmRna2tndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NcECxf2Rurrq2VL0a9/giphy.gif" width="600" />
 </p>
 
 
