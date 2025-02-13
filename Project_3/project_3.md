@@ -100,3 +100,126 @@ int main() {
   }
 }
 ```
+
+## Part 2
+### Main:
+```cpp
+#include "vex.h"
+
+using namespace vex;
+
+event checkRed = event();
+
+const int CENTER_FOV = 150;   // Random value between 148 and 168
+const int OFFSET_X = 20;      // Allowable deviation from the center
+const int STOP_DISTANCE = 80; // Stop when object is within 40 cm
+const double TURN_SENSITIVITY = 0.1; // Adjust for smoother turning
+
+int array[10] = {};
+int estimatedDistance = 0;
+
+int getDistancethread() {
+    while (true) {
+        Vision5.takeSnapshot(Vision5__GREENBOX);
+
+        if (Vision5.objectCount > 0) {  // If red object is detected
+            int objectWidth = Vision5.largestObject.width;
+
+            Brain.Screen.clearScreen();
+            Brain.Screen.setCursor(1, 1);
+            Brain.Screen.print("Red Object Found: %d", objectWidth);
+
+            // Convert object width to estimated distance
+            int getDistance = objectWidth; // Approximate formula
+
+            
+            for (int i = 0; i < 9; i++) {
+                array[i] = array[i + 1];  // Shift elements to the left
+            }
+            array[9] = getDistance;
+
+            int sum = 0;
+            for(int i=0; i<10; i++) {
+                sum += array[i];
+            }
+
+            estimatedDistance = sum/10; 
+
+            Brain.Screen.setCursor(2, 1);
+            Brain.Screen.print("Distance: %d cm", estimatedDistance);
+
+            wait(20, msec);
+        }
+    }
+    return 0;
+}
+
+int main() {
+    // Initializing Robot Configuration. DO NOT REMOVE!
+    vexcodeInit();
+
+    //Drivetrain.setDriveVelocity(20, percent); // Moderate speed for tracking
+
+    thread runThread = thread(getDistancethread);
+
+    Drivetrain.setTurnVelocity(5, percent);
+
+    int canDrive = 0;
+
+    while (true) {
+        Vision5.takeSnapshot(Vision5__GREENBOX);
+
+        if (Vision5.objectCount > 0) {
+            int objectX = Vision5.largestObject.centerX;
+            int error = objectX - CENTER_FOV;
+
+            if (estimatedDistance >= STOP_DISTANCE) {
+                canDrive = 0;
+                if(estimatedDistance >= STOP_DISTANCE*1.2) {Drivetrain.stop();}
+                Brain.Screen.setCursor(3, 1);
+                Brain.Screen.print("Object within 40cm - Stopping");
+            } else {
+                if(estimatedDistance<STOP_DISTANCE) { canDrive += 1;}
+                LeftMotor.setVelocity(20+error/15, percent);
+                RightMotor.setVelocity(20-error/15, percent);
+                
+                if(canDrive>5) {
+                    LeftMotor.spin(forward);
+                    RightMotor.spin(forward);
+                }
+                /*
+                // Calculate error (how far object is from center)
+                int error = objectX - CENTER_FOV;
+
+                // Turn speed is proportional to how far the object is from center
+                double turnSpeed = error * TURN_SENSITIVITY;
+
+                // Limit turn speed to the range [-30, 30]
+                if (turnSpeed > 20) turnSpeed = 20;
+                if (turnSpeed < -20) turnSpeed = -20;
+
+                Drivetrain.setTurnVelocity(5, percent);
+
+                if (error > OFFSET_X) {
+                    Drivetrain.turn(right);
+                } else if (error < -OFFSET_X) {
+                    Drivetrain.turn(left);
+                } else {
+                    Drivetrain.drive(forward);
+                }
+            }
+        } else {
+            Brain.Screen.clearScreen();
+            Brain.Screen.setCursor(1, 1);
+            Brain.Screen.print("No Red Object");
+            Drivetrain.stop(coast);
+        }*/  // Small delay to optimize sensor processing
+            wait(0.1, sec);
+            }
+        } else {
+            Drivetrain.stop();
+        }
+    }
+}
+
+```
