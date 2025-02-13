@@ -103,7 +103,11 @@ int main() {
 
 ## Part 2
 
+![VEX_Camera_Screenshot](https://github.com/user-attachments/assets/cfd163fd-0c92-4e29-9e6b-120524791d7b)
+
+
 ## Part 3
+
 ### Main:
 > Object sensor detecting colors and objects
 ```cpp
