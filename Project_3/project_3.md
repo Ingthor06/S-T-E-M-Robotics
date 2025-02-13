@@ -102,7 +102,10 @@ int main() {
 ```
 
 ## Part 2
+
+## Part 3
 ### Main:
+> Object sensor detecting colors and objects
 ```cpp
 #include "vex.h"
 
