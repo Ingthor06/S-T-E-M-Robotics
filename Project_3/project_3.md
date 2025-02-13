@@ -111,7 +111,7 @@ We connected to the VEX V5 Vision Sensor using our phones by accessing the VEX V
 ### Main:
 > Object sensor detecting colors and objects
 
-![Testrun Video](https://youtu.be/Y1HiajOZmJc)
+[Testrun Video](https://youtu.be/Y1HiajOZmJc)
 ```cpp
 #include "vex.h"
 
