@@ -166,7 +166,11 @@ int main() {
 
     Drivetrain.setTurnVelocity(5, percent);
 
-    int canDrive = 0; 
+    int canDrive = 0;
+    int wheelSpeed = 0;
+
+    LeftMotor.spin(forward);
+    RightMotor.spin(forward);
 
     while (true) {
         Vision5.takeSnapshot(Vision5__GREENBOX);
@@ -177,17 +181,17 @@ int main() {
 
             if (estimatedDistance >= STOP_DISTANCE) { // Based on width stops driving when the box comes too close
                 canDrive = 0;
-                if(estimatedDistance >= STOP_DISTANCE*1.2) {Drivetrain.stop();} //offsets the initial stop to make up for inconsistency in the sensor readings
+                if(estimatedDistance >= STOP_DISTANCE+10 && estimatedDistance <= STOP_DISTANCE+40) {wheelSpeed = 0;} //offsets the initial stop to make up for inconsistency in the sensor readings
                 Brain.Screen.setCursor(3, 1);
                 Brain.Screen.print("Object within 40cm - Stopping");
+		if(estimatedDistance > STOP_DISTANCE+40) {wheelSpeed = (STOP_DISTANCE+40 - estimatedDistance) / 10}
             } else {
                 if(estimatedDistance<STOP_DISTANCE) { canDrive += 1;} // counts how many times the distance is far enough to begin driving again
                 LeftMotor.setVelocity(20+error/15, percent); //set the velocity of both wheels based on where the box is to make it turn in the right direction
                 RightMotor.setVelocity(20-error/15, percent);
                 
                 if(canDrive>5) { // drives again only once being given the green light 5 times to rule out the inconsistant readings further
-                    LeftMotor.spin(forward);
-                    RightMotor.spin(forward);
+                    wheelSpeed = 20;
                 }
             wait(0.1, sec);
             }
