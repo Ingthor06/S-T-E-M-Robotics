@@ -187,33 +187,6 @@ int main() {
                     LeftMotor.spin(forward);
                     RightMotor.spin(forward);
                 }
-                /*
-                // Calculate error (how far object is from center)
-                int error = objectX - CENTER_FOV;
-
-                // Turn speed is proportional to how far the object is from center
-                double turnSpeed = error * TURN_SENSITIVITY;
-
-                // Limit turn speed to the range [-30, 30]
-                if (turnSpeed > 20) turnSpeed = 20;
-                if (turnSpeed < -20) turnSpeed = -20;
-
-                Drivetrain.setTurnVelocity(5, percent);
-
-                if (error > OFFSET_X) {
-                    Drivetrain.turn(right);
-                } else if (error < -OFFSET_X) {
-                    Drivetrain.turn(left);
-                } else {
-                    Drivetrain.drive(forward);
-                }
-            }
-        } else {
-            Brain.Screen.clearScreen();
-            Brain.Screen.setCursor(1, 1);
-            Brain.Screen.print("No Red Object");
-            Drivetrain.stop(coast);
-        }*/  // Small delay to optimize sensor processing
             wait(0.1, sec);
             }
         } else {
