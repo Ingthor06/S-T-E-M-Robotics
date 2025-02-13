@@ -43,8 +43,8 @@ int main() {
 View the movement fuctions testing in this short [video](https://www.youtube.com/watch?v=wdl-D-8D_Zs).<br/>
 
 ### Portrait:
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/93a77a2b-9cb6-459d-b4a5-9c3126f31800" width="550" />
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/93a77a2b-9cb6-459d-b4a5-9c3126f31800" width="700" />
 </p>
 
 ## Part 2:
