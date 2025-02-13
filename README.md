@@ -78,3 +78,5 @@ In [Project 3](Project_3/project_3.md), we developed a VEX V5 robot capable of a
   + Vision Sensor Connection: The VEX V5 Brain generated a Wi-Fi network, which we connected to using our phones. By accessing the Vision Sensor through a web browser, we were able to view the live camera feed in   real-time. This allowed us to monitor what the robot was seeing and adjust settings if necessary to improve object detection and tracking.
 
   + Object & Color Tracking: We programmed the Vision Sensor to recognize and track a specific color, enabling the robot to follow an object of our choice. In this test, we selected a green cube, and the robot      successfully identified, tracked, and followed it as it moved. This demonstrated the robot's ability to respond dynamically to visual input and interact with its environment based on color recognition.
+
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc216ZmY3N2c5Zml0eXJzamlnc2tucHNyYm82Z3drZXVycmRna2tndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NcECxf2Rurrq2VL0a9/giphy.gif)
