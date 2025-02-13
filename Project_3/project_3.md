@@ -105,6 +105,7 @@ int main() {
 
 ![Screenshot 2025-02-13 090930](https://github.com/user-attachments/assets/b7fe88f6-a260-4aca-a8f3-088d2577b82c)
 
+We connected to the VEX V5 Vision Sensor using our phones by accessing the VEX V5 Brain’s built-in Wi-Fi hotspot. After enabling the Vision Sensor on the VEX Brain, We connected our phones to the Wi-Fi network it created. Then, We opened a web browser and entered the Brain’s IP address to access the live camera feed. This allowed us to view real-time vision data, adjust settings, and fine-tune object detection directly from our phones.
 ## Part 3
 
 ### Main:
