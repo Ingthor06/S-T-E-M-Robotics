@@ -103,8 +103,7 @@ int main() {
 
 ## Part 2
 
-![Screenshot 2025-02-13 090930](https://github.com/user-attachments/assets/498dc82f-c58b-418b-834f-1eee990043d9)
-
+![Screenshot 2025-02-13 090930](https://github.com/user-attachments/assets/b7fe88f6-a260-4aca-a8f3-088d2577b82c)
 
 ## Part 3
 
