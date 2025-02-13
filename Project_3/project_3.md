@@ -123,7 +123,7 @@ event checkRed = event();
 
 const int CENTER_FOV = 150;   // Random value between 148 and 168
 const int OFFSET_X = 20;      // Allowable deviation from the center
-const int STOP_DISTANCE = 80; // Stop when object is within 40 cm
+const int STOP_DISTANCE = 60; // Stop when object is within 40 cm
 
 int array[10] = {};
 int estimatedDistance = 0;
@@ -168,13 +168,7 @@ int main() {
 
     thread runThread = thread(getDistancethread); // Start estimating distance
 
-    Drivetrain.setTurnVelocity(5, percent);
-
     int canDrive = 0;
-    int wheelSpeed = 0;
-
-    LeftMotor.spin(forward);
-    RightMotor.spin(forward);
 
     while (true) {
         Vision5.takeSnapshot(Vision5__GREENBOX);
@@ -185,18 +179,21 @@ int main() {
 
             if (estimatedDistance >= STOP_DISTANCE) { // Based on width stops driving when the box comes too close
                 canDrive = 0;
-                if(estimatedDistance >= STOP_DISTANCE+10 && estimatedDistance <= STOP_DISTANCE+40) {wheelSpeed = 0;} //offsets the initial stop to make up for inconsistency in the sensor readings
+                if(estimatedDistance >= STOP_DISTANCE*1.2) {Drivetrain.stop();} //offsets the initial stop to make up for inconsistency in the sensor readings
                 Brain.Screen.setCursor(3, 1);
                 Brain.Screen.print("Object within 40cm - Stopping");
-		if(estimatedDistance > STOP_DISTANCE+40) {wheelSpeed = (STOP_DISTANCE+40 - estimatedDistance) / 10}
+                Drivetrain.setDriveVelocity(10, percent);
+                while(estimatedDistance > STOP_DISTANCE*2) {Drivetrain.drive(reverse);}
             } else {
                 if(estimatedDistance<STOP_DISTANCE) { canDrive += 1;} // counts how many times the distance is far enough to begin driving again
                 LeftMotor.setVelocity(20+error/15, percent); //set the velocity of both wheels based on where the box is to make it turn in the right direction
                 RightMotor.setVelocity(20-error/15, percent);
-                
+
                 if(canDrive>5) { // drives again only once being given the green light 5 times to rule out the inconsistant readings further
-                    wheelSpeed = 20;
+                    LeftMotor.spin(forward);
+                    RightMotor.spin(forward);
                 }
+
             wait(0.1, sec);
             }
         } else {
