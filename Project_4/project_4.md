@@ -119,7 +119,7 @@ int main() {
 ```
 
 <p align="center">
-  <img src="![Untitled video - Made with Clipchamp](https://github.com/user-attachments/assets/1161e463-60ba-4be4-8c65-06a43e7e6b09)" width="600" />
+    ![Untitled video - Made with Clipchamp](https://github.com/user-attachments/assets/1161e463-60ba-4be4-8c65-06a43e7e6b09) 
 </p>
 
 
