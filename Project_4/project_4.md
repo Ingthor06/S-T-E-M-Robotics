@@ -118,7 +118,7 @@ int main() {
 }
 ```
 <p align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExem8ybXFtYWl1Z3MyaGxodXJsNzk5Nno1dTZ3Z2Zoa21xMWZpdmUwOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iglIUsXtZHwMWOMvfI/giphy.gif" width="600" />
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWxvN2htOWJvenR5cTJ6a25hOXkwdGdoN2VsZjVocGh1NTFwaHlqcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iglIUsXtZHwMWOMvfI/giphy.gif" width="600" />
 </p>
 
 ## Config:
