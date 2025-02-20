@@ -114,7 +114,7 @@ int main() {
 ## 📌 Part 3: Object Detection with Sensors
 
 ### 🎥 Testrun Video
-[![Testrun](https://img.shields.io/badge/Watch-Video-red?style=for-the-badge)](https://youtu.be/Y1HiajOZmJc)
+[![Testrun](https://img.shields.io/badge/Click-Here!-red?style=for-the-badge)](https://youtu.be/Y1HiajOZmJc)
 
 ### 🔹 Object Sensor Code
 ```cpp
