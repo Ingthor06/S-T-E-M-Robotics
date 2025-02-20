@@ -117,7 +117,9 @@ int main() {
   }
 }
 ```
-[](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExem8ybXFtYWl1Z3MyaGxodXJsNzk5Nno1dTZ3Z2Zoa21xMWZpdmUwOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iglIUsXtZHwMWOMvfI/giphy.gif)
+<p align="center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExem8ybXFtYWl1Z3MyaGxodXJsNzk5Nno1dTZ3Z2Zoa21xMWZpdmUwOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iglIUsXtZHwMWOMvfI/giphy.gif" width="600" />
+</p>
 
 ## Config:
 ```cpp
