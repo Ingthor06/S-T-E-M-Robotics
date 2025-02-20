@@ -30,7 +30,7 @@ void main {
 ```
 
 ### 🎥 Testrun Video
-[![Testrun](https://img.shields.io/badge/Watch-Video-red?style=for-the-badge)](https://youtu.be/P1BteJjgTnA)
+[![Testrun](https://img.shields.io/badge/Click-Here!-red?style=for-the-badge)](https://youtu.be/P1BteJjgTnA)
 
 ### 📝 Description
 > The VEX Robot detects obstacles and determines the best pathway to drive forward.
