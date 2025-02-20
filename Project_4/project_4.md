@@ -117,9 +117,9 @@ int main() {
   }
 }
 ```
-<p align="center">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmtobzVmbnkxZmoxazE2eDFneG5wb3hzeHJmZ2xvbGU5YnhiMHI0diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AYwQg4Pexk6xLby3KQ/giphy.gif" width="600" />
-</p>
+
+![Untitled video - Made with Clipchamp](https://github.com/user-attachments/assets/1161e463-60ba-4be4-8c65-06a43e7e6b09)
+
 
 ## Config:
 ```cpp
