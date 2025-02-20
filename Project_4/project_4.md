@@ -119,9 +119,8 @@ int main() {
 ```
 
 <p align="center">
-    ![Untitled video - Made with Clipchamp](https://github.com/user-attachments/assets/1161e463-60ba-4be4-8c65-06a43e7e6b09) 
+    <img src="https://github.com/user-attachments/assets/1161e463-60ba-4be4-8c65-06a43e7e6b09" alt="Untitled video - Made with Clipchamp" width="800">
 </p>
-
 
 
 ## Config:
