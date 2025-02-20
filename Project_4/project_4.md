@@ -179,17 +179,13 @@ void vexcodeInit(void) {
 ---
 
 ## **📢 Conclusion**  
-This VEX V5 program enables a robot to autonomously follow a line using three line trackers and dynamically adjust its movement. The program also displays real-time tracking information on the V5 Brain screen.  
-
-🚀 **Future Improvements:**  
-- Implement **PID control** for smoother line tracking.  
-- Add **obstacle detection** to avoid collisions.  
-- Introduce **speed adjustments** based on line curvature.  
+> [!NOTE]
+> This VEX V5 program enables a robot to autonomously follow a line using three line trackers and dynamically adjust its movement. The program also displays real-time tracking information on the V5 Brain screen.  
 
 ---
 
 ### **📌 Key Technologies Used**
 ✔️ C++  
-✔️ VEX V5 API  
+✔️ VEX V5 Robot  
 ✔️ Multi-threading  
 ✔️ Sensor Integration  
