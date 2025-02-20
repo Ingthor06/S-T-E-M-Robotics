@@ -16,7 +16,7 @@ This project is a VEX V5 robot program designed to follow a line using three lin
 ## **📜 Part 1: Line Tracking Code**  
 
 ### 🔧 **Welding Code (Line Following Logic)**  
-```cpp
+```
 bothmotors.setvelocity(50%)
 
 int threshold = 30;
