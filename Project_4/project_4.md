@@ -1,7 +1,8 @@
 # Project 4
 
 ## Part 1
-### SUDUKODI 
+
+### Welding Code: 
 ```
 bothmotors.setvelocity(50%)
 
