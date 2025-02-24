@@ -4,6 +4,8 @@
   </a>
 </div>
 
+---
+
 🚀 **STEM & Robotics Project** 🤖
 
 ![Taekniskolinn](https://img.shields.io/badge/Taekniskolinn-blue?style=for-the-badge&logo=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqTwAaMeKxCyPqZWQFVSrB3ifYAiyyDOn1HQ&s&logoColor=white)
