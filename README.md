@@ -1,4 +1,3 @@
----
 <div align="center">
   <a href="https://git.io/typing-svg" target="_blank">
     <img src="https://readme-typing-svg.demolab.com?font=Kode+Mono&size=40&duration=2000&pause=1000&center=true&vCenter=true&width=435&lines=S-T-E-M+%26+Robotics" alt="Typing SVG: STEM & Robotics">
