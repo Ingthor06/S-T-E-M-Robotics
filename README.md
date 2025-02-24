@@ -96,7 +96,7 @@ The program also utilizes multi-threading to handle both tracking logic and scre
 By integrating efficient sensor data handling, the robot optimizes its movement, making adjustments based on sensor readings to stay on course.  
 
 + ✔️ **Adaptive Motor Control:** Adjusts speed dynamically based on sensor readings.  
++ ✔️ **Efficient Sensor Integration:** Optimized data handling for precise movement.  
 
-+✔️ **Efficient Sensor Integration:** Optimized data handling for precise movement.  
 
 This project leverages **C++**, **multi-threading**, and **sensor integration** to enhance tracking efficiency and responsiveness.
