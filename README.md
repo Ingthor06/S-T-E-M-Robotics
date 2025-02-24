@@ -23,7 +23,7 @@
 ### 🇬🇧 English:
 📌 A class project exploring **STEM** *(Science, Technology, Engineering, and Mathematics)* through robotics design. This repository features innovative ideas, problem-solving, and teamwork in creating functional robots. It combines coding, engineering, and creativity to showcase real-world applications of robotics in STEM fields.
 
-> 📢 **Note:** This project is developed and designed by students in **Tækniskólinn Iceland**. I am working with both hardware and software in this project, combining physical components with programming to achieve the desired functionality. This project is for educational purposes only.
+[!NOTE] This project is developed and designed by students in **Tækniskólinn Iceland**. I am working with both hardware and software in this project, combining physical components with programming to achieve the desired functionality. This project is for educational purposes only.
 
 ## 👥 Contributors:
 + **Developed by:** @vValdimar, @Ingthor06
