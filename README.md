@@ -82,6 +82,7 @@ In [Project 3](Project_3/project_3.md), we programmed a **VEX V5 robot** for **a
 
 Project 4 focuses on developing a VEX V5 robot capable of autonomously following a line using three line sensors. The program dynamically adjusts motor speed and direction based on real-time sensor input to ensure precise tracking.  
 
+### 📌 Key Features
 + ✔️ **Line Tracking:** Uses three sensors (Left, Center, Right) to follow a line.  
 A key component of the project is the integration of a live status display on the VEX Brain screen, providing real-time feedback on the robot’s movements.  
 
