@@ -157,3 +157,6 @@ void vexcodeInit( void ) {
   Brain.Screen.clearScreen();
 }
 ```
+
+Óvænt villa kom bara þegar reynt var að setja -hnit inn í föllin, annars virkaði þetta bara vel en út af þessu fórum við aldrei að taka upp og einfaldlega varð enginn tími til að laga þetta.
+turnToHeading() og turnFor() föllin virkuðu ekki neitt, í bæði skipti myndi bíllinn snúast endalaust og vissi aldrei hvenær átti að stoppa, svo hér er sjálfgert myTurn() sem virkaði alveg þar til í lokin þegar mínus tðlurnar fóru að klúðra öllu. Annars tókst bílnum td að fara að hnitunum 1000, 500 með atanGoTo() fallinu, og gat gert það frá hvaðan sem er í kassanum.
